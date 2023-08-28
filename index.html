@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/671e9a4878.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CAR RENTAL </title>
+    <link rel = "stylesheet" href = "style1.css">
+</head>
+<body>
+
+    <!-- MY CART -->
+
+    <div id = "div1" class = "check1 container background-cart" style="background-color: white;">
+        <div class = "row">
+            <div class = "col-12">
+                <a onclick="button2()">
+                    <div class = "d-flex flex-row goBackEdit">
+                        <i class="fa-solid fa-angle-left" style = "cursor: pointer;margin-top : 5px;margin-left : 15px;"></i>
+                        <p style = "cursor: pointer;"> Go Back </p>
+                    </div>
+                </a>
+                <h1 class = "cartH"> My Cars  </h1>
+                    <hr class = "cartHrEdit"/>
+                    <div class = "d-flex flex-row headingsEdit">
+                        <p class = "menu1"> Description </p>
+                        <p class = "menu2"> Kilo Metres </p>
+                        <p class = "menu3"> Remove </p>
+                        <p class = "menu4"> Price </p>
+                    </div>
+                    <hr class = "cartHrEdit"/>
+                <div id = "crt" class = "d-flex flex-column">
+                    <!-- <div class = "d-flex flex-row" id = "cartItems">
+                        <div class = "menu1Item d-flex flex-row" id = "firdiv">
+                            <img src = "benzJs.png" class = "cartItemImg">
+                            <div class = "d-flex flex-column justify-content-center">
+                                <p class = "cartItemH"> Benz A-Class Car</p>
+                                <p class = "cartItemRate"> Rating : 4.5 </p>
+                            </div>
+                        </div>
+                        <div class = "menu2Item d-flex flex-row justify-content-center" id = "secdiv">
+                            <a onclick = "minusButton()"><i class="fa-solid fa-minus plus-minus-icon"></i></a>
+                            <p class = "cartCount" id = "cartCount"> 1 </p>
+                            <a onclick = "plusButton()"><i class="fa-solid fa-plus plus-minus-icon"></i></a>
+                        </div>
+                        <div class = "menu3Item d-flex flex-row justify-content-center" id = "thrdiv">
+                                <i class="fa-solid fa-xmark crossEdit"></i>
+                        </div>
+                        <div class = "menu4Item" id = "frdiv">
+                            <p id = "pricing"> 1000 /- </p>
+                        </div>
+                    </div>
+                    <hr class = "cartHrEdit"/> -->
+                </div>
+
+                <div style = "margin-top : 50px;" id = "billingPart">
+                    <p class = "billingEdit"> Subtotal <span class = "billingEdit-span" id = "billAmount"> 0 /- </span></p>
+                    <p class = "billingEdit"> Taxes(<span>*18% of the total bill</span>) <span class = "billingEdit-span" id = "taxAmount"> 0 /- </span></p>
+                    <p class = "totalEdit"> Total <span class = "billingEdit-span" id = "totalAmount"> 0 /- </span></p>
+                </div>
+                    
+
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN PAGE OF THE WEBSITE -->
+
+    <div class = "container" id = "div2">
+            <div class = "row">
+                <div class = "col-12" style = "background-color: aliceblue;"id = "home">
+                    <ul>
+                        <div class = "d-flex flex-row justify-content-center">
+                            <a href = "#home" style = "text-decoration: none;"><li class = "list-elements-edit list-hover-1"> Home </li></a>
+                            <a href = "#About" style = "text-decoration: none;"><li class = "list-elements-edit list-hover-2"> About </li></a> 
+                            <a href = "#cars" style = "text-decoration: none;"><li class = "list-elements-edit list-hover-2"> Cars </li></a> 
+                            <a href = "#whyChooseUs" style = "text-decoration: none;"><li class = "list-elements-edit list-hover-3"> Why Choose Us </li></a>
+                            <a href = "#contactUs" style = "text-decoration: none;"><li class = "list-elements-edit list-hover-4"> Contact Us </li></a>
+                            <a onclick = "button1()" href = "#" style = "text-decoration: none;"><li class = "list-elements-edit list-hover-4"> Cart </li></a>  
+                        </div>
+                    </ul>
+                </div>
+            
+
+            <div class = "col-12" style = "background-color: aliceblue;">
+                <div class = "d-flex flex-row">
+                <div class = "imgbg shadow">
+                    <img src = "assets/homeImg.png" class = "homeImgEdit">
+                </div>
+                <div>
+                <p class = "homePageLine"> Adventure the <span class = "edit">LUXURY</span> <br> at affordable prices.</p>
+                <a href = "#"><img src = "assets/getItPS.png" class = "downloadEdit" style = "margin-top : 50px;"></a>
+                <a href = "#"><img src = "assets/getItP.png" class = "downloadEdit"></a>
+                </div>
+                </div>
+
+                <marquee direction="left" style = "border-style : solid; margin-bottom : 50px; margin-top : 20px;">
+                    <img src = "assets/scrollCar.png" class = "scrollEdit">
+                    <img src = "assets/benz.png" class = "logoEdit">
+                    <img src = "assets/bmw.png" class = "logoEdit">
+                    <img src = "assets/audi.png" class = "logoEdit" style = "margin-left : 15px;">
+                    <img src = "assets/suziki.png" class = "scrollEdit" style = "margin-left : -20px;">
+                    <img src = "assets/skoda.png" style = "height : 60px; margin-left : -15px;">
+                    <img src = "assets/jag.png" class = "scrollEdit">
+                    <img src = "assets/ford.png" class = "logoEdit">
+                    <img src = "assets/landRover.png" style = "height : 60px; margin-left : 10px;">
+                </marquee>
+            </div>
+
+            <div class = "col-12" id = "About">
+                <div class = "container">
+                    <div class = "row">
+                        <img src = "assets/carRow.jpg" class = "col-12 col-md-6 carRowEdit">
+                        <div class = "col-12 col-md-6">
+                            <p class = "aboutEdit"> About Us </p>
+                            <p class = "abtEdit"> Welcome to our premier car rental services! At Hire Luxury, we understand that your journey is not just about reaching a destination; it's about the experiences you gather along the way. With our diverse fleet of top-quality vehicles and a commitment to exceptional customer service, we are here to enhance your travel experience and provide you with the keys to unforgettable memories. </p>
+                        </div>
+                        <div class = "col-12 d-none d-md-block" style = "margin-top : 40px">
+                            <p class = "qutEdit"> visit Hire Luxury because </p>
+                            <p class = "qtEdit"> Life is too short , To drive boring cars. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class = "container" id = "cars">
+                <div class = "row">
+                    <div class = "col-12" style = "border-style: soli;">
+                        <h1 class = "carPageH"> Our Vehicles </h1>
+                        <p class = "carPageP"> Choose your favourite car <br> from a variety of my amazing cars. </p>
+                        <div class = "d-flex flex-row">
+                            <div class = "d-flex flex-column">
+                                <button class = "carPageB carPageB-active" onclick = "car1(this)" id = "car1"> Mercedes Benz </button>
+                                <button class = "carPageB" onclick = "car2()" id = "car2"> BMW </button>
+                                <button class = "carPageB" onclick = "car3()" id = "car3"> Audi </button>
+                                <button class = "carPageB" onclick = "car4()" id = "car4"> Suziki </button>
+                                <button class = "carPageB" onclick = "car5()" id = "car5"> Skoda </button>
+                                <button class = "carPageB" onclick = "car6()" id = "car6"> Jaguar </button>
+                                <button class = "carPageB" onclick = "car7()" id = "car7"> Ford </button>
+                                <button class = "carPageB" onclick = "car8()" id = "car8"> Land Rover </button>
+                                <a onclick = "addButton()" style = "cursor: pointer;">
+                                    <div style = "cursor: pointer;" id = "buttonInnerText">
+                                        <div class = "d-flex flex-row addButton justify-content-center" id = "innerText"> 
+                                            <div class = "d-flex flex-row">
+                                            <p style = "cursor: pointer;"> Add </p>
+                                            <i class="fa-solid fa-plus" style="color: #ffffff; margin-top : 4px;margin-left : 5px;cursor: pointer;"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                                
+                            </div>
+
+
+                            <img src = "assets/benzJs.png" class = "jsImg" id = "carImg">
+
+                            <table border = "1" class = "table-edit">
+                                <tr style = "padding-top : 0px;">
+                                    <td width = "200px;" style = "height : 40px;color : rgb(206, 111, 51);" class = "td-edit"> Model </td>
+                                    <td width = "200px;" style = "height : 40px;" class = "td-edit" id = "model"> A-Class </td>
+                                </tr>
+                                <tr>
+                                    <td width = "200px;" style = "height : 40px;color : rgb(206, 111, 51);" class = "td-edit"> Company </td>
+                                    <td width = "200px;" style = "height : 40px;" class = "td-edit" id = "company"> Benz Mercedes </td>
+                                </tr>
+                                <tr>
+                                    <td width = "200px;" style = "height : 40px;color : rgb(206, 111, 51);" class = "td-edit"> Year </td>
+                                    <td width = "200px;" style = "height : 40px;" class = "td-edit" id = "year"> 2018 </td>
+                                </tr>
+                                <tr>
+                                    <td width = "200px;" style = "height : 40px;color : rgb(206, 111, 51);" class = "td-edit"> AC </td>
+                                    <td width = "200px;" style = "height : 40px;" class = "td-edit" id = "ac"> Yes </td>
+                                </tr>
+                                <tr>
+                                    <td width = "200px;" style = "height : 40px;color : rgb(206, 111, 51);" class = "td-edit"> Sun Roof </td>
+                                    <td width = "200px;" style = "height : 40px;" class = "td-edit" id = "sr"> No </td>
+                                </tr>
+                                <tr>
+                                    <td width = "200px;" style = "height : 40px;color : rgb(206, 111, 51);" class = "td-edit"> Type </td>
+                                    <td width = "200px;" style = "height : 40px;" class = "td-edit" id = "type"> Manual </td>
+                                </tr>
+                                <tr>
+                                    <td width = "200px;" style = "height : 40px;color : rgb(206, 111, 51);" class = "td-edit"> Fuel </td>
+                                    <td width = "200px;" style = "height : 40px;" class = "td-edit" id = "fuel"> Deisel </td>
+                                </tr>
+
+                                <tr>
+                                    <td width = "200px;" style = "height : 40px;color : rgb(206, 111, 51);" class = "td-edit"> Rating </td>
+                                    <td width = "200px;" style = "height : 40px;" class = "td-edit" id = "rating"> 4.5 </td>
+                                </tr>
+
+                                <tr>
+                                    <td width = "200px;" style = "height : 40px;color : rgb(206, 111, 51);" class = "td-edit"> Price </td>
+                                    <td width = "200px;" style = "height : 40px;" class = "td-edit" id = "price"> 1000 /- per Km </td>
+                                </tr>
+                                
+                            </table>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class = "col-12" id = "whyChooseUs">
+                <h1 class = "text-center chooseUsEdit"> Why Choose Us ?? </h1>
+                <div class = "container">
+                    <div class = "row d-flex flex-row justify-content-center">
+                        <div class = "col-12 col-md-3 card shadow" style = "border-radius : 15px;margin-top: 50px;margin-right : 15px;margin-left : 15px;">
+                            <i class="fa-solid fa-hand-holding-dollar icons-chus-edit"></i>
+                            <p class = "cardTextEdit"> Competetive Rates </p>
+                        </div>
+                        <div class = "col-12 col-md-3 card shadow" style = "border-radius : 15px;margin-top: 50px;margin-right : 15px;margin-left : 15px;">
+                            <i class="fa-solid fa-clock icons-chus-edit"></i>
+                            <p class = "cardTextEdit"> 24/7 Support </p>
+                        </div>
+                        <div class = "col-12 col-md-3 card shadow" style = "border-radius : 15px;margin-top: 50px;margin-right : 15px;margin-left : 15px;">
+                            <i class="fa-solid fa-car icons-chus-edit"></i>
+                            <p class = "cardTextEdit"> Pickup & Drof Off </p>
+                        </div>
+                    </div>
+                    <div class = "d-flex flex-row justify-content-center">
+                        <div class = "col-12 col-md-10 shadow"style = "background-color : white;border-radius : 15px;margin-top : 40px;margin-bottom : 50px;">
+                            <p class = "aboutEdit"style = "margin-top : 20px;margin-left : 10px;"> More than 50+ Cars </p>
+                            <p class = "chusQt">  Our handpicked selection of meticulously maintained vehicles unlocks the gateway to unforgettable journeys. Seamlessly reserve your ideal car through our intuitive online platform, ensuring a hassle-free experience from the moment you land with our convenient airport pickup services. Whether you're navigating city streets, exploring scenic routes, or embarking on epic adventures, our commitment to customer satisfaction, around-the-clock support, and a diverse fleet tailored to your desires will elevate your travel to new heights. Embrace the road ahead, redefine your explorations, and let Luxury Hire be your partner in every expedition. </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class = "col-12">
+                <div class = "container">
+                    <div class = "row">
+                        <div class = "col-12 col-md-5 d-flex flex-column">
+                            <div class = "d-flex flex-row">
+                                <p class = "digit-edit"> 1 </p>
+                                <p style = "margin-top : 30px;font-size : 20px;font-style: italic;"> <span style = "font-weight : bold;font-size : 25px;font-family: 'Ubuntu', sans-serif;font-style: normal;">Advance Safety Systems : </span> <br> Your safety is paramount. Our vehicles are equipped with modern safety technologies, including adaptive cruise control, lane departure warning, blind-spot monitoring, and advanced braking systems to provide peace of mind on every mile.</p>
+                            </div>
+
+                            <div class = "d-flex flex-row">
+                                <p class = "digit-edit" style = "width : 220px;"> 2 </p>
+                                <p style = "margin-top : 30px;font-size : 20px;font-style: italic;"> <span style = "font-weight : bold;font-size : 25px;font-family: 'Ubuntu', sans-serif;font-style: normal;">Comfort and Connectivity : </span> <br> Enjoy the journey in utmost comfort with plush seating, climate control, and adjustable seating options. Spacious interiors and ample cargo capacity ensure you have room for all your travel essentials.</p>
+                            </div>
+
+                            <div class = "d-flex flex-row">
+                                <p class = "digit-edit" style = "width : 180px;"> 3 </p>
+                                <p style = "margin-top : 30px;font-size : 20px;font-style: italic;"> <span style = "font-weight : bold;font-size : 25px;font-family: 'Ubuntu', sans-serif;font-style: normal;">GPS Navigation : </span> <br> Get to your destination hassle-free with built-in GPS navigation systems that guide you through unfamiliar territories, taking the stress out of navigation.</p>
+                            </div>
+
+                        </div>
+                        <div class = "col-md-7 d-none d-md-block">
+                            <div style = "background-color: whitesmoke;border-radius : 600px;width : 500px;height : 500px;margin-top : 50px;border-bottom-right-radius: 0px;border-top-right-radius: 0px;margin-left : 150px;">
+                                <img src = "assets/benzCar.png" class = "benz-car-edit">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class = "col-12" style = "background-color : black;border-width : 3px;">
+            <div class = "col-12" style = "background-color: aliceblue;" id = "contactUs">
+                <h1 class = "footerQt"> Money may not buy <span style = "font-family: 'Londrina Shadow', cursive;">happiness</span> ,<br> but it is better to cry in a <span style = "font-family: 'Londrina Shadow', cursive;">Lamborghini</span>. </h1>
+                <div class = "d-flex flex-row justify-content-center">
+                    <a href = "#"><img src = "assets/getItPS.png" class = "downloadEdit" style = "margin-left : 0px;"></a>
+                    <a href = "#"><img src = "assets/getItP.png" class = "downloadEdit" style = "margin-left : 10px;"></a>
+                </div>
+                <div class = "d-flex flex-row justify-content-center">
+                    <a href = "https://instagram.com/aditya_d_47?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i class="fa-brands fa-square-instagram contactIcons"></i></a>
+                    <a href = "https://www.facebook.com/profile.php?id=100054465810987&mibextid=ZbWKwL"><i class="fa-brands fa-facebook contactIcons"></i></a>
+                    <a href = "https://twitter.com/Aditya_Muppidi_"><i class="fa-brands fa-square-x-twitter contactIcons"></i></a>
+                    <a href = "www.linkedin.com/in/adityamuppidi"><i class="fa-brands fa-linkedin contactIcons"></i></a>
+                </div>
+            </div>
+            <div class = "col-12" style = "background-color: black;">
+                <p class = "text-center footerTxt"> This site belongs to Aditya Muppidi...All rights reserved © Pvt. Ltd. </p>
+            </div>
+        </div>
+    </div>
+
+    
+    <script src = "myscripts.js"></script>
+</body>
+</html>

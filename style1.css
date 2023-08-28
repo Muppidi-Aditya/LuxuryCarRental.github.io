@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Bricolage+Grotesque:opsz@10..48&family=Dancing+Script:wght@600&family=Handjet&family=Inconsolata&family=Kanit&family=Lato&family=Lexend+Peta:wght@300&family=Londrina+Outline&family=Londrina+Shadow&family=Montserrat&family=Mukta&family=Noto+Sans+JP&family=Open+Sans&family=Playfair+Display:wght@500&family=Preahvihear&family=REM&family=Raleway:wght@500&family=Roboto+Slab&family=Source+Code+Pro&family=Ubuntu&family=Ysabeau+SC:wght@300&display=swap');
+
+*{
+    margin : 0px;
+    cursor: context-menu;
+}
+
+.list-elements-edit
+{
+    list-style-type : none;
+    font-weight : bold;
+    margin : 25px;
+    cursor : pointer;
+    margin-bottom : 30px;
+}
+
+html
+{
+    scroll-behavior: smooth;
+}
+
+.list-hover-1
+{
+    color : black;
+    font-size : 20px;
+    transition : 0.5s;
+}
+
+
+.list-hover-1:hover
+{
+    color : grey;
+}
+
+.list-hover-2
+{
+    color : black;
+    font-size : 20px;
+    transition : 0.5s;
+}
+
+.list-hover-2:hover
+{
+    color : grey;
+}
+
+
+.list-hover-3
+{
+    color : black;
+    font-size : 20px;
+    transition : 0.5s;
+}
+
+.list-hover-3:hover
+{
+    color : grey;
+}
+
+
+.list-hover-4
+{
+    color : black;
+    font-size : 20px;
+    transition : 0.5s;
+}
+
+.list-hover-4:hover
+{
+    color : grey;
+}
+
+.home-edit
+{
+   height : 100vh;
+   background-color: aliceblue; 
+}
+
+.homeImgEdit
+{
+    height : 350px;
+    width : 800px;
+    margin-top : 80px;
+    margin-bottom : 30px;
+}
+
+.imgbg
+{
+    width : 500px;
+    background-color : rgb(166, 232, 226);
+    margin-left : -15px;
+    border-top-right-radius: 80%;
+    border-bottom-right-radius: 80%;
+    margin-bottom : 50px;
+}
+
+.homePageLine
+{
+    font-family: 'REM', sans-serif;
+    font-weight : bolder;
+    font-size : 50px;
+    margin-left : 70px;
+}
+
+.edit
+{
+    font-family: 'Londrina Outline', cursive;
+    font-size : 60px;
+}
+
+.downloadEdit
+{
+    height : 70px;
+    width : 200px;
+    margin-left : 350px;
+    margin-top : 10px;
+    cursor : pointer;
+}
+
+.scrollEdit
+{
+    height : 80px;
+}
+
+.logoEdit
+{
+    height : 50px;
+}
+
+.ladyCarEdit
+{
+    margin-top : 50px;
+}
+
+.aboutH
+{
+    margin-top : 30px;
+    font-family: 'Preahvihear', sans-serif;
+    margin-bottom : 40px;
+}
+
+.aboutP
+{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight : bold;
+    font-size : 25px;
+    margin-left : -20px;
+    margin-bottom : 100px;
+}
+
+.shadower
+{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.groupCarEdit
+{
+    margin-top : 50px;
+}
+
+.carAbout
+{
+    font-family: 'Kanit', sans-serif;
+    text-align : center;
+    font-weight : bold;
+    font-style :italic;
+    margin-top : 40px;
+}
+
+.bulb-edit
+{
+    height : 100px;
+}
+
+.switchEdit1
+{
+    width : 60px;
+    height : 40px;
+    background-color : white;
+    color : black;
+    font-weight : bold;
+    border-radius : 5px;
+    margin-left : 5px;
+    margin-top : 5px;
+    margin-bottom : 5px;
+}
+
+.switchEdit2
+{
+    width : 60px;
+    height : 40px;
+    background-color : red;
+    color : white;
+    font-weight : bold;
+    border-radius : 5px;
+    margin-left : 5px;
+    margin-top : 5px;
+    margin-right : 5px;
+    margin-bottom : 5px;
+}
+
+.carImageEdit
+{
+    height : 0px;
+    width :0px;
+}
+
+.carRowEdit
+{
+    margin-top : 60px;
+}
+
+.aboutEdit
+{
+    color : rgb(118, 117, 117);
+    margin-top : 60px;
+    font-weight : bold;
+    font-family: 'Raleway', sans-serif;
+    font-size : 20px;
+}
+
+.abtEdit
+{
+    font-family: 'Lato', sans-serif;
+    font-weight : bold;
+    font-size : 25px;
+}
+
+.qutEdit
+{
+    color : rgb(118, 117, 117);
+    font-weight : bold;
+    font-family: 'Raleway', sans-serif;
+}
+
+.qtEdit
+{
+    font-weight : bold;
+    color : rgb(0, 246, 225);
+    font-size : 70px;
+    font-family: 'Londrina Outline', cursive;
+    margin-top : -20px;
+    margin-bottom : 50px;
+}
+
+.chooseUsEdit
+{
+    font-family: 'Preahvihear', sans-serif;
+    margin-top : 50px;
+    font-weight : bold;
+    font-size : 30px;
+    margin-bottom : 20px;
+}
+
+.icons-chus-edit
+{
+    font-size : 80px;
+    text-align : center;
+    margin-top : 50px;
+    color :rgb(38, 48, 80);
+}
+
+.cardTextEdit
+{
+    font-weight : bold;
+    text-align: center;
+    font-size : 25px;
+    margin-top : 30px;
+    font-family: 'Lato', sans-serif;
+    margin-bottom : 50px;
+    color :rgb(38, 48, 80);
+}
+
+.chusQt
+{
+    font-weight : bold;
+    font-size : 22px;
+    font-family: 'Lato', sans-serif;
+    margin-top : -10px;
+    margin-left : 10px;
+    margin-bottom : 20px;
+}
+
+.benz-car-edit
+{
+    height: 480px;
+    margin-top : 50px;
+    margin-left : -150px;
+}
+
+.digit-edit
+{
+    margin-top : 30px;
+    border-style : solid;
+    height :  50px;
+    width : 250px;
+    text-align : center;
+    font-size : 25px;
+    font-weight: bold;
+    background-color: rgb(88, 232, 232);
+    color : white;
+    border-radius : 50px;
+    font-family: 'Raleway', sans-serif;
+    margin-right : 20px;
+}
+
+.footerQt
+{
+    font-size : 35px;
+    text-align : center;
+    font-weight : bold;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    margin-top : 30px;
+    margin-bottom : 20px;
+}
+
+.contactIcons
+{
+    font-size : 40px;
+    cursor: pointer;
+    margin-left : 15px;
+    margin-bottom : 30px;
+    margin-top : 30px;
+    color : black;
+}
+
+.footerTxt
+{
+    color : white;
+    font-size : 20px;
+    font-family: 'Roboto Slab', serif;
+    margin-top : 10px;
+}
+
+/* car page */
+
+.carPageH
+{
+    font-family: 'Lato', sans-serif;
+    font-size : 35px; 
+    font-weight : bold;
+    text-align : center;
+    margin-top : 20px;
+}
+
+.carPageP
+{
+    color : rgb(118, 117, 117);
+    font-family: 'Lato', sans-serif;
+    font-weight : bold;
+    font-size : 15px;
+    text-align : center;
+    margin-top : 5px;
+}
+
+.carPageB
+{
+    width : 200px;
+    border-width: 0px;
+    margin-top : 20px;
+    height : 50px;
+    margin-left : -100px;
+    color : black;
+    background-color :rgba(176, 176, 176, 0.19);
+    font-weight : bold;
+    font-family: 'Roboto Slab', serif;
+}
+
+.addButton
+{
+    width : 200px;
+    border-width: 0px;
+    margin-top : 20px;
+    height : 50px;
+    margin-left : -100px;
+    color : white;
+    background-color: rgb(206, 111, 51);
+    font-weight : bold;
+    font-family: 'Ubuntu', serif;
+    border-radius : 80px;
+    padding-top : 12px;
+    cursor : pointer;
+}
+
+.carPageB:focus
+{
+    outline: none;
+}
+
+.carPageB:hover
+{
+    background-color: rgb(206, 111, 51);
+    color : white;
+}
+
+.carPageB-active
+{
+    background-color: rgb(206, 111, 51);
+    color : white;
+}
+
+.jsImg
+{
+    height : 400px;
+    margin-left : 120px;
+    margin-top : 100px;
+    margin-right : 80px;
+    width : 550px;
+}
+
+.table-edit
+{
+    border-width : 2px;
+    border-color : rgb(37, 37, 37);
+    margin-right : -200px;
+}
+
+.td-edit
+{
+    font-family: 'Lato', sans-serif;
+    font-size : 19px;
+    font-weight : 800;
+    padding-left : 20px;
+}
+
+.extra 
+{
+    height : 300px;
+}
+
+/* DISPLAY SETTINGS */
+
+.check1
+{
+    display: none;
+}
+
+.check2 
+{
+    display: block;
+}
+
+/* CART CSS  */
+
+.goBackEdit
+{
+    color : black;
+    font-size : 20px;
+    font-weight : bold;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top : 20px;
+}
+
+.cartH
+{
+    text-align: center;
+    margin-top : -20px;
+    font-family: 'Montserrat', sans-serif;
+    color : black;
+    font-weight : bold;
+    margin-bottom : 50px;
+}
+
+.cartItemImg 
+{
+    height : 140px;
+    width : 210px;
+    margin-left : 12px;
+    margin-top : 12px;
+    background-color: rgb(214, 214, 214);
+}
+
+.cartItemH
+{
+    font-family: 'ADLaM Display', cursive;
+    margin-left : 25px;
+    margin-top : 30px;
+    font-size : 22px;
+}
+
+.headingsEdit
+{
+    font-family: 'Raleway', sans-serif;
+    font-weight : bold;
+    font-size : 20px;
+    text-align: center;
+    margin-top : 25px;
+}
+
+.cartItemRate
+{
+    color : rgb(118, 117, 117);
+    font-family: 'Ubuntu', sans-serif;
+    margin-left : 25px;
+    font-size : 15px;
+    margin-top : -15px;
+}
+
+.plus-minus-icon
+{
+    border-style : solid;
+    height : 50px;
+    width : 50px;
+    text-align : center;
+    padding-top : 14px;
+    font-weight : bold;
+    border-width : 0px;
+    background-color : black;
+    color : white;
+    cursor : pointer;
+    margin-top : 50px;
+}
+
+.cartCount
+{
+    font-family: 'ADLaM Display', cursive;
+    font-size : 30px;
+    border-style : solid;
+    height : 50px;
+    width : 50px;
+    text-align : center;
+    border-width : 0.5px;
+    margin-top : 50px;
+}
+
+.crossEdit
+{
+    height : 50px;
+    width : 50px;
+    background-color: rgb(214, 214, 214);
+    text-align : center;
+    font-size : 20px;
+    color : black;
+    padding-top : 15px;
+    margin-top : 50px;
+}
+
+.cartPrice
+{
+    font-weight : bold;
+    
+}
+
+.cartHrEdit
+{
+    width : 100%;
+    border-width : 2px;
+    border-color :black;
+}
+
+.extraCartHrEdit
+{
+    margin-top : 20px;
+    margin-bottom : 20px;
+}
+
+.menu1
+{
+    width : 40%;;
+}
+
+.menu2
+{
+    width : 20%;
+}
+
+.menu3
+{
+    width : 20%;
+}
+
+.menu4
+{
+    width : 20%;
+}
+
+.menu1Item
+{
+    width : 40%;}
+
+.menu2Item
+{
+    width : 20%;
+}
+
+.menu3Item
+{
+    width : 20%;
+}
+
+.menu4Item
+{
+    width : 20%;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight : bold;
+    text-align : center;
+    padding-top : 55px;
+    font-size : 25px;
+}
+
+.billingEdit
+{
+    color : rgb(76, 76, 76);
+    font-size : 18px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight : 600;
+    margin-left : 2vw;
+}
+
+.billingEdit-span
+{
+    position: absolute;
+    right : 3vw;
+}
+
+.totalEdit
+{
+    color : black;
+    font-family: 'Open Sans', sans-serif;
+    font-weight : bold;
+    font-size : 23px;
+    margin-left : 2vw;
+}
